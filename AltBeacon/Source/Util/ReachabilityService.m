@@ -26,7 +26,7 @@
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
         
-        reachability = [Reachability reachabilityWithHostName:@"dropbox.com"];
+        reachability = [Reachability reachabilityWithHostname:@"dropbox.com"];
         [reachability startNotifier];
                 
         [self reachabilityChanged:nil];
