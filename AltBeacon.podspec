@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
+  s.dependency 'Reachability'
 
   s.requires_arc = true
 
