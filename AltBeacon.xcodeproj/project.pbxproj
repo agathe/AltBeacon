@@ -19,7 +19,6 @@
 		6AF69B8E191FDE9300123BAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF69B76191FDE9300123BAF /* UIKit.framework */; };
 		6AF69B96191FDE9300123BAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AF69B94191FDE9300123BAF /* InfoPlist.strings */; };
 		6AF69B98191FDE9300123BAF /* AltBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69B97191FDE9300123BAF /* AltBeaconTests.m */; };
-		6AF69BDC191FDEDE00123BAF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69BA2191FDEDE00123BAF /* Reachability.m */; };
 		6AF69BDD191FDEDE00123BAF /* CBCentralManager+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69BA5191FDEDE00123BAF /* CBCentralManager+Ext.m */; };
 		6AF69BDE191FDEDE00123BAF /* CBPeripheralManager+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69BA7191FDEDE00123BAF /* CBPeripheralManager+Ext.m */; };
 		6AF69BDF191FDEDE00123BAF /* CBUUID+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69BA9191FDEDE00123BAF /* CBUUID+Ext.m */; };
@@ -73,8 +72,6 @@
 		6AF69B93191FDE9300123BAF /* AltBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AltBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		6AF69B95191FDE9300123BAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AF69B97191FDE9300123BAF /* AltBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AltBeaconTests.m; sourceTree = "<group>"; };
-		6AF69BA1191FDEDE00123BAF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		6AF69BA2191FDEDE00123BAF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		6AF69BA4191FDEDE00123BAF /* CBCentralManager+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBCentralManager+Ext.h"; sourceTree = "<group>"; };
 		6AF69BA5191FDEDE00123BAF /* CBCentralManager+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBCentralManager+Ext.m"; sourceTree = "<group>"; };
 		6AF69BA6191FDEDE00123BAF /* CBPeripheralManager+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheralManager+Ext.h"; sourceTree = "<group>"; };
@@ -237,8 +234,6 @@
 		6AF69BA0191FDEDE00123BAF /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
-				6AF69BA1191FDEDE00123BAF /* Reachability.h */,
-				6AF69BA2191FDEDE00123BAF /* Reachability.m */,
 			);
 			path = 3rdParty;
 			sourceTree = "<group>";
@@ -354,7 +349,6 @@
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
 					6AF69B6E191FDE9300123BAF = {
-						DevelopmentTeam = 68UAR7Q9NP;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -362,6 +356,7 @@
 						};
 					};
 					6AF69B89191FDE9300123BAF = {
+						DevelopmentTeam = PTA88CMJZF;
 						TestTargetID = 6AF69B6E191FDE9300123BAF;
 					};
 				};
@@ -418,7 +413,6 @@
 				6AF69BE8191FDEDE00123BAF /* NSObject+Ext.m in Sources */,
 				6AF69BF5191FDEDE00123BAF /* INWeightedAverage.m in Sources */,
 				6AF69BDF191FDEDE00123BAF /* CBUUID+Ext.m in Sources */,
-				6AF69BDC191FDEDE00123BAF /* Reachability.m in Sources */,
 				6AF69BE4191FDEDE00123BAF /* NSFileManager+Ext.m in Sources */,
 				6AF69BE9191FDEDE00123BAF /* NSRangeExt.m in Sources */,
 				6AF69BE1191FDEDE00123BAF /* NSArray+Ext.m in Sources */,
@@ -606,6 +600,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -655,6 +650,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
